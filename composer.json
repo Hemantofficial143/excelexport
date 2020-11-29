@@ -1,0 +1,20 @@
+{
+    "name": "jangid/export",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hemant",
+            "email": "rj.hemantjangid@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "maatwebsite/excel": "9999999-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jangid\\Export\\" : "src/"
+        }
+    }
+}
