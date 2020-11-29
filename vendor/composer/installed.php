@@ -1,16 +1,26 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '4d86b8ef8c8e9004bdee06e57915eea1b812b515',
     'name' => 'jangid/export',
   ),
   'versions' => 
   array (
+    'barryvdh/laravel-dompdf' => 
+    array (
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
+      'aliases' => 
+      array (
+        0 => '0.8.x-dev',
+      ),
+      'reference' => 'd496c0a4e5146ab6dd6c680684a0b567ddf408a6',
+    ),
     'doctrine/inflector' => 
     array (
       'pretty_version' => '2.1.x-dev',
@@ -19,6 +29,15 @@
       array (
       ),
       'reference' => 'c6a0da4f0e06aa5cd83a2c1a4e449fae98c8bad7',
+    ),
+    'dompdf/dompdf' => 
+    array (
+      'pretty_version' => 'v0.8.6',
+      'version' => '0.8.6.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'db91d81866c69a42dad1d2926f61515a1e3f42c5',
     ),
     'illuminate/collections' => 
     array (
@@ -58,12 +77,12 @@
     ),
     'jangid/export' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '4d86b8ef8c8e9004bdee06e57915eea1b812b515',
     ),
     'maatwebsite/excel' => 
     array (
@@ -120,6 +139,25 @@
         0 => '2.x-dev',
       ),
       'reference' => 'd0463779663437392fe42ff339ebc0213bd55498',
+    ),
+    'phenx/php-font-lib' => 
+    array (
+      'pretty_version' => '0.5.2',
+      'version' => '0.5.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ca6ad461f032145fff5971b5985e5af9e7fa88d8',
+    ),
+    'phenx/php-svg-lib' => 
+    array (
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
+      'aliases' => 
+      array (
+        0 => '0.3.x-dev',
+      ),
+      'reference' => '16fd4d717be18d8a604f2d0c3045b35aa2f6b0a5',
     ),
     'phpoffice/phpspreadsheet' => 
     array (
@@ -179,6 +217,15 @@
         0 => '1.0.x-dev',
       ),
       'reference' => '5a7b96b1dda5d957e01bc1bfe77dcca09c5a7474',
+    ),
+    'sabberworm/php-css-parser' => 
+    array (
+      'pretty_version' => '8.3.1',
+      'version' => '8.3.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd217848e1396ef962fb1997cf3e2421acba7f796',
     ),
     'symfony/polyfill-mbstring' => 
     array (

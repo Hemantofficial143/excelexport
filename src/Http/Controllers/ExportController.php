@@ -1,6 +1,7 @@
 <?php
-namespace Jangid\Export\Http\Controllers;
+namespace Xpert\Export\Http\Controllers;
 
+use PDF;
 use Maatwebsite\Excel\Facades\Excel;
 
 class ExportController{
@@ -9,5 +10,9 @@ class ExportController{
     }
     public function exportCsv(object $data,string $filename){
         return Excel::download($data,$filename.".csv");
+    }
+    public function exportPdf(string $view,object $data,string $filename){
+        $pdf = PDF::loadView($view,['data' => $data]);
+        return $pdf->download($filename.".pdf");
     }
 }

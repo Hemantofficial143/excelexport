@@ -1,20 +1,32 @@
 {
-    "name": "jangid/export",
+    "name": "xpert/export",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Hemant",
-            "email": "rj.hemantjangid@gmail.com"
+            "name": "hemantjr",
+            "email": "hemantjr@xpertdeveloper.in"
         }
     ],
     "minimum-stability": "dev",
     "require": {
-        "maatwebsite/excel": "9999999-dev"
+        "maatwebsite/excel": "9999999-dev",
+        "barryvdh/laravel-dompdf": "0.8.x-dev"
+        
     },
     "autoload": {
         "psr-4": {
-            "Jangid\\Export\\" : "src/"
+            "Xpert\\Export\\" : "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xpert\\Export\\ExportServiceProvider"
+            ],
+            "aliases": {
+                "Export": "Xpert\\Export\\Facade\\Export"
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 <?php
-namespace Jangid\Export\Facade;
+namespace Xpert\Export\Facade;
 
 use Illuminate\Support\Facades\Facade;
 

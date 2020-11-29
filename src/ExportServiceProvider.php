@@ -1,5 +1,5 @@
 <?php
-namespace Jangid\Export;
+namespace Xpert\Export;
 use Carbon\Laravel\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
 use Maatwebsite\Excel\ExcelServiceProvider;
@@ -16,8 +16,11 @@ class ExportServiceProvider extends ServiceProvider{
             return new ExportController;
         });
         $this->app->register('Maatwebsite\Excel\ExcelServiceProvider');
+        $this->app->register('Barryvdh\DomPDF\ServiceProvider');
+        
         $loader = \Illuminate\Foundation\AliasLoader::getInstance();
         $loader->alias('Excel', 'Maatwebsite\Excel\Facades\Excel');
-        
+        $loader->alias('PDF', 'Barryvdh\DomPDF\Facade');
+
     }
 }
